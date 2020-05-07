@@ -6,4 +6,4 @@ COPY . .
 
 RUN bash ./setup.sh
 
-ENV PATH="$HOME/.cargo/bin:$PATH"
+ENV PATH="/home/.cargo/bin:$PATH"
