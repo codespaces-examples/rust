@@ -8,6 +8,7 @@
     ],
     "dockerFile": "Dockerfile",
     "settings": {
+	"editor.formatOnSave": true,
         "terminal.integrated.shell.linux": "/usr/bin/zsh",
         "files.exclude": {
             "**/CODE_OF_CONDUCT.md": true,
