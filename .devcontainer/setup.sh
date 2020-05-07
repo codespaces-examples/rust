@@ -7,7 +7,9 @@ apt-get install -y \
   jq \
   sudo \
   zsh \
-  vim
+  vim \
+  build-essential \
+  openssl
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
