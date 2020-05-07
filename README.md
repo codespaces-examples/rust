@@ -15,6 +15,9 @@ This is a basic environment that should be ready to expand upon to build a day-t
 - [sudo](https://www.sudo.ws/) - the superuser authority delegation tool.
 - [zsh](https://www.zsh.org/) - interactive terminal (alternative to `bash`).
 - [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - a delightful community driven framework for managing zsh config.
+- [vim](https://www.vim.org/) - a text editor
+- build essentials - tools for compiling and linking code
+- [openssl](https://www.openssl.org/) - tls and ssl toolkit
 
 ### Rust Tools
 
