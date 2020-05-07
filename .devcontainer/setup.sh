@@ -9,7 +9,7 @@ apt-get install -y \
   zsh 
 
 ## Install rustup and common components
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl https://sh.rustup.rs -sSf | sh -s -- -y 
 rustup install nightly
 rustup component add rustfmt
 rustup component add rustfmt --toolchain nightly
