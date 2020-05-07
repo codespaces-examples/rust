@@ -6,7 +6,8 @@ apt-get install -y \
   gnupg2 \
   jq \
   sudo \
-  zsh 
+  zsh \
+  vim
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 

@@ -13,5 +13,6 @@
             "**/CODE_OF_CONDUCT.md": true,
             "**/LICENSE": true
         }
-    }
+    },
+    "postCreateCommand": "source $HOME/.cargo/env",
 }
