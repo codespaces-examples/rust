@@ -1,19 +1,18 @@
 {
-    "name": "Codespaces Rust Starter",
-    "extensions": [
-        "ms-vsliveshare.vsliveshare",
-	"matklad.rust-analyzer",
-	"serayuzgur.crates",
-        "vadimcn.vscode-lldb",
-        "rust-lang.rust"
-    ],
-    "dockerFile": "Dockerfile",
-    "settings": {
-	"editor.formatOnSave": true,
-        "terminal.integrated.shell.linux": "/usr/bin/zsh",
-        "files.exclude": {
-            "**/CODE_OF_CONDUCT.md": true,
-            "**/LICENSE": true
-        }
-    }
+	"name": "Codespaces Rust Starter",
+	"extensions": [
+		"ms-vsliveshare.vsliveshare",
+		"matklad.rust-analyzer",
+		"serayuzgur.crates",
+		"vadimcn.vscode-lldb"
+	],
+	"dockerFile": "Dockerfile",
+	"settings": {
+		"editor.formatOnSave": true,
+		"terminal.integrated.shell.linux": "/usr/bin/zsh",
+		"files.exclude": {
+			"**/CODE_OF_CONDUCT.md": true,
+			"**/LICENSE": true
+		}
+	}
 }

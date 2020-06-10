@@ -95,8 +95,8 @@ To load this setup in a container, we need to point to it. We have many options 
 2. Choose  `Remote-Containers: Open Repository in container`
 3. Type `codespaces-examples/rust` in the prompt.
 4. Chose to create a unique volume.
-5. Wait until the container is setup and you are connected to it, at this point, it should ask you to install some missing Rust components, go ahead and say yes.
-![](https://user-images.githubusercontent.com/113/84210352-468ca100-aa6d-11ea-88c4-fdffa1b9e92a.png)
+5. Wait until the container is setup and you are connected to it, at this point, it should ask you to install the Language server for the rust-analyzer, go ahead and click "Download now".
+![](https://user-images.githubusercontent.com/113/84297926-2ad3da00-ab03-11ea-8045-690eb0763d9f.png)
 
 That's it, you are all setup, you can modify and run the code in your local VSCode instance but the code and extensions will run in your container.
 
