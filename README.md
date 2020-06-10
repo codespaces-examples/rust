@@ -29,7 +29,6 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 
 ### VS Code Extensions
 
-- [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust): Rust default extension.
 - [Rust Analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer): an alternative rust language server to the RLS.
 - [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb): native debugger based on LLDB.
 - [Crates](https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates): helps Rust developers managing dependencies with Cargo.toml.
@@ -41,7 +40,7 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 
 ## Usage
 
-### Online VS Codespaces
+### Visual Studio Codespaces
 
 #### Inital Creation
 
@@ -50,7 +49,7 @@ For usage in VS Codespaces, you're going to want to head over to [online.visuals
 - Ensure you're on the `/environments` page at [online.visualstudio.com/environments](https://online.visualstudio.com/environments)
 - In the top right corner, there'll be a "Create environment" button. Click this button, which will open up a panel from the right side of the screen. Fill in the details of this panel:
   - **Codespace Name:** This will be the visible name of your environment within Codespaces. The value here doesn't particularly matter.
-  - **Git Repository:** This is going to be either the URL you'd `git clone` the repo from or the GitHub `<org OR user>/<repo>` shorthand. For this repo, the easier value would be `codespaces-examples/base`.
+  - **Git Repository:** This is going to be either the URL you'd `git clone` the repo from or the GitHub `<org OR user>/<repo>` shorthand. For this repo, the easier value would be `codespaces-examples/rust`.
   - **Instance Type:** For this, you're going to choose your plan - in my case, I'm just going to go with the `Standard (Linux)` plan. For most use cases of this starter, `Basic (Linux)` should suffice. You can also change your plan at any time, as your workload demands.
   - **Suspend idle environment after:** This is the period of time you want your environment to automatically suspend after you've stopped actively using it. I generally chose 5 minutes and have not had any problems to date.
   - **Dotfiles (optional):** These are entirely optional, and are available for advanced users.
@@ -75,10 +74,9 @@ Additionally, if you've installedthe [Visual Studio Codespaces](https://marketpl
 
 Now that you're set up and connected, you should be able to work within your Codespaces environment.
 
-### VS Codespaces inside a Docker container
+### Developing inside a Container
 
-Using [Visual Studio Code](https://code.visualstudio.com/) and a [specific extension](https://aka.ms/vscode-remote/download/extension), we can load this codespace in a brand new local [Docker](https://docker.com/) container and use it as a full-featured development environment. Note that this approach requires a few more steps than using the online setup mentioned above. The advantages being that this works offline and there are no costs associated with this approach. It is a great way to play with a setup without having to install everything globally on one's machine!
-
+Using [Visual Studio Code](https://code.visualstudio.com/) and a [specific extension](https://aka.ms/vscode-remote/download/extension), we can load this setup in a brand new local [Docker](https://docker.com/) container and use it as a full-featured development environment. Note that this approach requires a few more steps than using the online setup mentioned above. The advantages being that this works offline and there are no costs associated with this approach. It is a great way to play with a setup without having to install everything globally on one's machine!
 
 #### Requirements
 
@@ -88,7 +86,7 @@ Follow the instruction [guide here](https://code.visualstudio.com/docs/remote/co
 
 ### Setup
 
-To load the codespace in a container, we need to point to it. We have many options here, the main ones being to connect to a repository and the other one to open a local folder with the codespace repo checked out. We are going to take the easiest approach and setup the code space directly from this repository.
+To load this setup in a container, we need to point to it. We have many options here, the main ones being to connect to a repository and the other one to open a local folder with the codespace repo checked out. We are going to take the easiest approach and setup the code space directly from this repository.
 
 1. In VSCode, click on the green icon in the lower left corner.
 
