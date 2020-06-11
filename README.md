@@ -40,7 +40,7 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 
 ## Usage
 
-### In VS Codespaces
+### Visual Studio Codespaces
 
 #### Inital Creation
 
@@ -48,8 +48,8 @@ For usage in VS Codespaces, you're going to want to head over to [online.visuals
 
 - Ensure you're on the `/environments` page at [online.visualstudio.com/environments](https://online.visualstudio.com/environments)
 - In the top right corner, there'll be a "Create environment" button. Click this button, which will open up a panel from the right side of the screen. Fill in the details of this panel:
-  - **Codespace Name:** This will be the visible name of your environment within Codespaces. The value here doesn't particularly matter. 
-  - **Git Repository:** This is going to be either the URL you'd `git clone` the repo from or the GitHub `<org OR user>/<repo>` shorthand. For this repo, the easier value would be `codespaces-examples/base`.
+  - **Codespace Name:** This will be the visible name of your environment within Codespaces. The value here doesn't particularly matter.
+  - **Git Repository:** This is going to be either the URL you'd `git clone` the repo from or the GitHub `<org OR user>/<repo>` shorthand. For this repo, the easier value would be `codespaces-examples/rust`.
   - **Instance Type:** For this, you're going to choose your plan - in my case, I'm just going to go with the `Standard (Linux)` plan. For most use cases of this starter, `Basic (Linux)` should suffice. You can also change your plan at any time, as your workload demands.
   - **Suspend idle environment after:** This is the period of time you want your environment to automatically suspend after you've stopped actively using it. I generally chose 5 minutes and have not had any problems to date.
   - **Dotfiles (optional):** These are entirely optional, and are available for advanced users.
@@ -73,6 +73,33 @@ Additionally, if you've installedthe [Visual Studio Codespaces](https://marketpl
 #### Working
 
 Now that you're set up and connected, you should be able to work within your Codespaces environment.
+
+### Developing inside a Container
+
+Using [Visual Studio Code](https://code.visualstudio.com/) and a [specific extension](https://aka.ms/vscode-remote/download/extension), we can load this setup in a brand new local [Docker](https://docker.com/) container and use it as a full-featured development environment. Note that this approach requires a few more steps than using the online setup mentioned above. The advantages being that this works offline and there are no costs associated with this approach. It is a great way to play with a setup without having to install everything globally on one's machine!
+
+#### Requirements
+
+There are 3 main requirements: **VSCode**, **the Remote - Containers VSCode extension** and **Docker**.
+
+Follow the instruction [guide here](https://code.visualstudio.com/docs/remote/containers#_installation) and come back here once those 3 components are installed locally.
+
+### Setup
+
+To load this setup in a container, we need to point to it. We have many options here, the main ones being to connect to a repository and the other one to open a local folder with the codespace repo checked out. We are going to take the easiest approach and setup the code space directly from this repository.
+
+1. In VSCode, click on the green icon in the lower left corner.
+
+![](https://code.visualstudio.com/assets/docs/remote/common/remote-dev-status-bar.png)
+
+2. Choose  `Remote-Containers: Open Repository in container`
+3. Type `codespaces-examples/rust` in the prompt.
+4. Chose to create a unique volume.
+5. Wait until the container is setup and you are connected to it, at this point, it should ask you to install the Language server for the rust-analyzer, go ahead and click "Download now".
+![](https://user-images.githubusercontent.com/113/84297926-2ad3da00-ab03-11ea-8045-690eb0763d9f.png)
+
+That's it, you are all setup, you can modify and run the code in your local VSCode instance but the code and extensions will run in your container.
+
 
 ## Contributing
 
