@@ -10,7 +10,7 @@ This is a basic environment that should be ready to expand upon to build a day-t
 
 - [curl/curl](https://github.com/curl/curl): the command line tool for transferring data over a metric boatload of protocols.
 - git: the Git SCM tool.
-- [gnupg2](https://gnupg.org/): a complete and free implementatiuon of the OpenPGP standard.
+- [gnupg2](https://gnupg.org/): a complete and free implementation of the OpenPGP standard.
 - [stedolan/jq](https://github.com/stedolan/jq) - a command line JSON parser.
 - [sudo](https://www.sudo.ws/) - the superuser authority delegation tool.
 - [zsh](https://www.zsh.org/) - interactive terminal (alternative to `bash`).
@@ -42,7 +42,7 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 
 ### Visual Studio Codespaces
 
-#### Inital Creation
+#### Initial Creation
 
 For usage in VS Codespaces, you're going to want to head over to [online.visualstudio.com](https://online.visualstudio.com) and sign up for VS Codespaces (that process is outside the scope of these instructions). Once you've got an account and are signed in to [online.visualstudio.com](https://online.visualstudio.com), you're going to take the following steps:
 
@@ -60,13 +60,13 @@ For usage in VS Codespaces, you're going to want to head over to [online.visuals
 
 #### Connecting to your Environment
 
-Once you've completed the Creation steps, your environment will be usable from Codespaces until you delete it. You can access it by going to [online.visualstudio.com](https://online.visualstudio.com) and selecting the vertical elipsis menu to connect to it from the browser or launch it in VS Code / VS Code Insiders.
+Once you've completed the Creation steps, your environment will be usable from Codespaces until you delete it. You can access it by going to [online.visualstudio.com](https://online.visualstudio.com) and selecting the vertical ellipsis menu to connect to it from the browser or launch it in VS Code / VS Code Insiders.
 
-When inside of the environment you can change envrionments themselves from the command pallete with the `Codespaces: Connect`.
+When inside of the environment you can change environments themselves from the command pallete with the `Codespaces: Connect`.
 
 > **Note:** See the [VS Online in the Browser](https://docs.microsoft.com/en-us/visualstudio/online/quickstarts/browser) quickstart for more information.
 
-Additionally, if you've installedthe [Visual Studio Codespaces](https://marketplace.visualstudio.com/items?itemName=ms-vsonline.vsonline) extension in VS Code locally, you'll be able to directly connect from VS Code itself.
+Additionally, if you've installed the [Visual Studio Codespaces](https://marketplace.visualstudio.com/items?itemName=ms-vsonline.vsonline) extension in VS Code locally, you'll be able to directly connect from VS Code itself.
 
 > **Note:** See the [VS Online in VS Code](https://docs.microsoft.com/en-us/visualstudio/online/quickstarts/vscode) quickstart for more information.
 
