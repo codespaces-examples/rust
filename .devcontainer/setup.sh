@@ -10,6 +10,9 @@ apt-get install -y \
   vim \
   build-essential \
   openssl
+  
+## update and install 2nd level of packages
+apt-get install -y pkg-config
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y
