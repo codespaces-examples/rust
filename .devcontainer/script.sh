@@ -14,20 +14,18 @@ apt-get install -y \
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
 
-# Path to rustup and cargo
-RUSTUP="/root/.cargo/bin/rustup"
-CARGO="/root/.cargo/bin/cargo"
+export PATH="/root/.cargo/bin/":$PATH
 
-$RUSTUP install nightly
-$RUSTUP component add rustfmt
-$RUSTUP component add rustfmt --toolchain nightly
-$RUSTUP component add clippy 
-$RUSTUP component add clippy --toolchain nightly
+rustup install nightly
+rustup component add rustfmt
+rustup component add rustfmt --toolchain nightly
+rustup component add clippy 
+rustup component add clippy --toolchain nightly
 
 # Download cargo-binstall to ~/.cargo/bin directory
 curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
 
-$CARGO binstall cargo-expand cargo-edit -y
+cargo binstall cargo-expand cargo-edit -y
 
 ## setup and install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
